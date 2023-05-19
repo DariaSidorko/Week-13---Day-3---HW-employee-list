@@ -1,38 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  border-radius: 50%;
+  border: 2px solid lightgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  border: 2px solid rgb(53, 138, 223);
+  width: 98%;
+  padding: 10px 0;
+  margin: 2px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.col-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center; */
+  width: 50%;
+  border: 2px solid orange;
+  height: 98%;
+  margin: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 50%;
+  border: 2px solid rgb(142, 80, 10);
+  height: 98%;
+  margin: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-right-next{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 80%;
 }
+
+.e-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  border: 2px solid rgb(239, 237, 237);
+  border-radius: 8px;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+.e-header img {
+  margin-left: 20px;
+}
+
+.e-name-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.search-bar{
+  border: 2px solid green;
+  width: 98%;
+  padding: 10px 0;
+  margin: 2px 0;
+}
+
+input{
+  width: 98%;
+  height: 130%;
+  margin-top: -10%;
+  border: 2px solid rgb(237, 237, 50);
+  border-radius: 5px;
+}
+
+.e-header-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid red;
+  width: 98%;
+  margin: 2px 0;
+}
+
+.all-employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(218, 2, 218);
+  width: 98%;
+  height: 98%;
+  margin: 2px 0;
+}
+
+.employee-details{
+  float: right;
+}
+
+button{
+  margin-left: 50px;
+  border: none;
+  background-color: white;
+  padding: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+button:hover{
+  color: red;
+}
+
+
+.col2{
+  text-align: left;
+  width: 95%;
+  border: 2px solid rgb(239, 237, 237);
+  border-radius: 4px;
+  padding: 15px 0;
+  margin-top: -2px;
+}
+
+.col2 > *{
+  padding-left: 25px;
+}
+
+.e-name-title-small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.e-header-small > img{
+  margin-left: 10px;
+}
+
+.e-header-small > *{
+  margin: 6px 0;
+}
+
+
+
